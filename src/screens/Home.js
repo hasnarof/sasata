@@ -40,7 +40,10 @@ export default function Home({ navigation }) {
           <TouchableOpacity style={tw`bg-white shadow-md p-4 w-28 h-25`}>
             <Text bold>Challenge Decluttering</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={tw`bg-white shadow-md p-4 w-28 h-25`}>
+          <TouchableOpacity
+            style={tw`bg-white shadow-md p-4 w-28 h-25`}
+            onPress={() => navigation.navigate("Sasata Shop")}
+          >
             <Text bold>Satata Shop</Text>
           </TouchableOpacity>
         </HStack>

@@ -1,5 +1,7 @@
+import { CommonActions } from "@react-navigation/native";
 import axios from "axios";
+import { common } from "./Common";
 
 export const ClientHttp = axios.create({
-  baseURL: "https://odd-spies-play-36-78-116-126.loca.lt",
+  baseURL: common.baseUrl,
 });
