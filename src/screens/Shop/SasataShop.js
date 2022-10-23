@@ -41,7 +41,7 @@ export default function SasataShop({ navigation }) {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View style={tw`p-4`}>
+        <View style={tw`p-5`}>
           <Input
             InputRightElement={
               <Icon
@@ -54,7 +54,7 @@ export default function SasataShop({ navigation }) {
             placeholder="Search product..."
           ></Input>
 
-          <View style={tw`flex flex-wrap`}>
+          <View style={tw`flex flex-row flex-wrap`}>
             {products.map((product, key) => (
               <TouchableOpacity
                 style={styles.product}
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     marginLeft: "5%",
   },
   container2: {
-    flexDirection: "row",
+    // flexDirection: "row",
     justifyContent: "space-between",
     width: "90%",
     marginLeft: "5%",
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
     marginRight: "5%",
   },
   productContainer: {
-    flexDirection: "row",
+    // flexDirection: "row",
   },
   product: {
     marginTop: 10,
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 10,
     shadowColor: "0px 0px 0px rgba(0, 0, 0, 0.75)",
-    marginLeft: "5%",
+    // marginLeft: "5%",
     backgroundColor: colors.white0,
   },
   subproduct: {
