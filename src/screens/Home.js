@@ -26,7 +26,10 @@ export default function Home({ navigation }) {
         </Center>
 
         <HStack space={2} style={tw`mt-5`}>
-          <TouchableOpacity style={tw`bg-white shadow-md p-4 w-28 h-25`}>
+          <TouchableOpacity
+            style={tw`bg-white shadow-md p-4 w-28 h-25`}
+            onPress={() => navigation.navigate("Countdown")}
+          >
             <Text bold>Fokus Decluttering</Text>
           </TouchableOpacity>
           <TouchableOpacity style={tw`bg-white shadow-md p-4 w-28 h-25`}>

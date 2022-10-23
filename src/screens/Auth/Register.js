@@ -28,7 +28,7 @@ export default function Register({ navigation }) {
       <View style={tw`p-4`}>
         <Center style={tw`mt-20 mb-10`}>
           <Image
-            style={tw`object-contain w-50 h-52`}
+            style={tw`w-50 h-52`}
             source={require("../../assets/sasata/logo.png")}
           ></Image>
         </Center>
