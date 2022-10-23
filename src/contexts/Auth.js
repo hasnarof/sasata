@@ -41,7 +41,10 @@ const AuthProvider = ({ children }) => {
     //call the service passing credential (email and password).
     //In a real App this data will be provided by the user from some InputText components.
     // const _authData = await authService.signIn(email, password)
-    const _authData = await authService.signIn("admin@gmail.com", "password");
+    const _authData = await authService.signIn(
+      "akmalrayhan@gmail.com",
+      "password"
+    );
     //Set the data in the context, so the App can be notified
     //and send the user to the AuthStack
     setAuthData({
